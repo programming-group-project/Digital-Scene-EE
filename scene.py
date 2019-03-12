@@ -72,7 +72,7 @@ def stars():
 #Draw stars
 def draw_stars():
     for x in range(user_rating):
-        chad.setposition(random.randint(-400,400),random.randint(100,250))
+        chad.setposition(random.randint(-500,500),random.randint(100,250))
         chad.pendown()
         stars()
         chad.penup()
@@ -154,7 +154,7 @@ def building(buildingnum, startY, sequence):
     buildingheight = random.randint(100,250)
     buildingwidth = random.randint(50,75)
     buildY = (startY+((25 / buildingnum) * sequence))
-    chad.setpos(random.randint(-400,400), buildY)
+    chad.setpos(random.randint(-350,400), buildY)
     chad.color("grey")
     chad.begin_fill()
     chad.pendown()
